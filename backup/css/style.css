@@ -1,0 +1,287 @@
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-EXTRALIGHT.OTF");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-EXTRALIGHTITALIC.OTF");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-THIN.OTF");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-THINITALIC.OTF");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-LIGHT.OTF");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-LIGHTITALIC.OTF");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA.OTF");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-MEDIUM.OTF");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-MEDIUMITALIC.OTF");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-BOLD.OTF");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-BOLDITALIC.OTF");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-EXTABLACK.OTF");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-EXTRABLACKITALIC.OTF");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-HEAVY.OTF");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url("../fonts/GEOMETRIA-HEAVYITALIC.OTF");
+  font-weight: 900;
+  font-style: italic;
+}
+
+.main {
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: unset;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Geometria";
+}
+
+.wrapper {
+  max-width: 880px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 63px;
+  font-weight: 900;
+  font-family: "Geometria";
+  color: rgb(1, 1, 1);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-size: 34px;
+  font-family: "Geometria";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+}
+
+.countdown-number {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  max-width: 110px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.countdown-text {
+  font-size: 24px;
+  font-family: "Geometria";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.countdown-time {
+  font-size: 48px;
+  font-family: "Geometria";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-bottom: 22px;
+  font-weight: 300;
+}
+
+.line {
+  background-color: rgb(166, 206, 57);
+  height: 1px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts .col {
+  width: 50%;
+}
+
+.contacts .col p {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.contact-item {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .countdown {
+    flex-wrap: wrap;
+  }
+  .main {
+    background-size: cover !important;
+  }
+  .logo {
+    margin-top: 40px;
+  }
+  .contacts .col {
+    width: 100%;
+  }
+  .contacts {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 48px;
+  }
+  .countdown-time {
+    padding: 5px;
+    font-size: 38px;
+  }
+  .countdown-number {
+    max-width: 70px;
+  }
+  .countdown-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .logo img {
+    width: 100%;
+  }
+  .contacts .col p {
+    font-size: 19px;
+  }
+  .contacts .col .contact-item {
+    font-size: 19px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .countdown-number {
+    max-width: 62px;
+  }
+  .countdown-text {
+    font-size: 16px;
+  }
+  .countdown-time {
+    margin-bottom: 16px;
+  }
+}
