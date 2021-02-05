@@ -169,6 +169,8 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesToScroll: 3,
     arrows: true,
     dots: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1444,
@@ -212,4 +214,44 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     ]
   });
+  jQuery('.grid').responsivegrid({
+    'breakpoints': {
+      'desktop' : {
+        'range' : '1900-8000',
+        'options' : {
+          'column' : 8,
+          'gutter' : '10px',
+          'itemHeight' : '100%',
+          'resizeDelay' : '2000',
+          'resizeTimeout' : '5000',
+        }
+      },
+      'tablet-landscape' : {
+        'range' : '1024-1900',
+        'options' : {
+          'column' : 8,
+          'gutter' : '5px',
+        }
+      },
+      'tablet-portrate' : {
+        'range' : '767-1024',
+        'options' : {
+          'column' : 4,
+        }
+      },
+      'mobile' : {
+        'range' : '-767',
+        'options' : {
+          'column' : 2,
+        }
+      },
+    }
+  });
+
+  window.onload = function() {
+    console.log('11111111111');
+    setTimeout( function(){}, 2000)
+    document.querySelector('body').classList.add('body-griad');
+
+  }
 });

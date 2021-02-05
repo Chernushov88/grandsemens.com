@@ -218,6 +218,7 @@ gulp.task("scripts", function() {
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
       "node_modules/slick-carousel/slick/slick.min.js",
       // "./src/js/masked-input.js",
+      "./src/js/jquery.responsivegrid.js",
       "./src/js/common.min.js",
       "node_modules/intl-tel-input/build/js/intlTelInput.min.js",
       "node_modules/intl-tel-input/build/js/utils.js"
