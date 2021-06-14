@@ -81,14 +81,14 @@ gulp.task("svg-sprite", function() {
 
 gulp.task("image-to-webp", () =>
   gulp
-    .src("./src/img/*")
+    .src("./src/img/**/*")
     .pipe(webp())
     .pipe(gulp.dest("./img"))
 );
 
 gulp.task("image-min", () =>
   gulp
-    .src("./src/img/*")
+    .src("./src/img/**/*")
     .pipe(image())
     .pipe(gulp.dest("./img"))
     .pipe(connect.reload())
@@ -244,7 +244,7 @@ gulp.task("copy-scripts", function() {
 });
 
 gulp.task("copy-fonts", function() {
-  return gulp.src(["./src/fonts/*"]).pipe(gulp.dest("./fonts/"));
+  return gulp.src(["./src/fonts/**/*"]).pipe(gulp.dest("./fonts/"));
 });
 
 gulp.task("copy-json", function() {
@@ -309,7 +309,7 @@ function watchFiles() {
     ])
   );
   gulp.watch(
-    "./src/img/*",
+    "./src/img/**/*",
     gulp.series(["image-to-webp", "image-min", "svg-sprite"])
   );
 }

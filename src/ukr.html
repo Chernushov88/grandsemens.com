@@ -92,25 +92,6 @@
 </head>
 
 <body>
-<div class="bx_breadcrumbs" style="display: none;">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" title="Главная" itemprop="item"><span itemprop="name">Главная</span><meta itemprop="position" content="0" /></a>
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#sunflower" title="Про нас" itemprop="item"><span itemprop="name">Про нас</span><meta itemprop="position" content="0" /></a>
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#gibridyi_kukuruzyi" title="Гібриди" itemprop="item"><span itemprop="name">Гібриди</span><meta itemprop="position" content="0" /></a>
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#dealers" title="Дилери" itemprop="item"><span itemprop="name">Дилери</span><meta itemprop="position" content="0" /></a>
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#footer" title="Контакти" itemprop="item"><span itemprop="name">Контакти</span><meta itemprop="position" content="0" /></a>
-    </li>
-  </ul>
-</div>
 <header class="header">
   <div class="container">
     <div class="row desktop">
@@ -152,13 +133,31 @@
                 </div>
               </div>
               <div class="header-menu__line"></div>
-              <div class="header-menu__list-wrapp">
-                <div class="header-menu__list">
-                  <a href="#sunflower" class="header-menu__list-item">Про нас</a>
-                  <a href="#gibridyi_kukuruzyi" class="header-menu__list-item">Гібриди</a>
-                  <a href="#dealers" class="header-menu__list-item">Дилери</a>
-                  <a href="#footer" class="header-menu__list-item">Контакти</a>
-                </div>
+              <div class="header-menu__list-wrapp bx_breadcrumbs">
+                <ul class="header-menu__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/#sunflower" class="header-menu__list-item" itemprop="item">
+                      <span itemprop="name">Про нас</span>
+                      <meta itemprop="position" content="0"/>
+                    </a>
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/#gibridyi_kukuruzyi" class="header-menu__list-item" itemprop="item"><span itemprop="name">Гібриди</span>
+                      <meta itemprop="position" content="0"/>
+                    </a>
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/#dealers" class="header-menu__list-item" itemprop="item"><span itemprop="name">Дилери</span>
+                      <meta itemprop="position" content="0"/>
+                    </a>
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/#footer" class="header-menu__list-item" itemprop="item"><span
+                        itemprop="name">Контакти</span>
+                      <meta itemprop="position" content="0"/>
+                    </a>
+                  </li>
+                </ul>
                 <ul class="header-menu__social">
                   <li><a href="https://www.facebook.com/grandsemens/" target="_blank">
                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
@@ -512,7 +511,7 @@
   </div>
 </section>
 
-<section class="corn" id="gibridyi_kukuruzyi"  itemscope itemtype="http://schema.org/Article">
+<section class="corn" id="gibridyi_kukuruzyi" itemscope itemtype="http://schema.org/Article">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -530,7 +529,8 @@
                 <img src="img/colos-icon.png" alt="">
               </div>
             </div>
-            <div class="corn-top-desc" itemprop="articleBody">Високий потенціал врожайності. Також характеризується високою вологовіддачею під
+            <div class="corn-top-desc" itemprop="articleBody">Високий потенціал врожайності. Також характеризується
+              високою вологовіддачею під
               час дозрівання. Толерантний до фузаріозу качана і пухирчастої сажки. Гібрид стабільний, адаптивний до
               вирощування в різних кліматичних зонах України. Розкриває свій потенціал на родючих ґрунтах
             </div>
@@ -817,7 +817,7 @@
     </div>
   </div>
 </section>
-<section class="corn corn_sunflovers" itemscope itemtype="http://schema.org/Article">
+<section class="corn corn_sunflovers" id="gibridi_sonyashniku" itemscope itemtype="http://schema.org/Article">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -836,7 +836,8 @@
                 <img src="img/shesterenka-white.svg" alt="">
               </div>
             </div>
-            <div class="corn-top-desc" itemprop="articleBody">Займає найвищі оцінки з агрономічних характеристик, але головна перевага -
+            <div class="corn-top-desc" itemprop="articleBody">Займає найвищі оцінки з агрономічних характеристик, але
+              головна перевага -
               стійкість до вовчка раси G і вище.
             </div>
             <meta itemprop="description" content="- стійкі до гербіциду SU або IMI
@@ -1767,7 +1768,7 @@
     </div>
   </div>
 </section>
-<section class="installment">
+<section class="installment" id="agriculturalists">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -2192,7 +2193,7 @@
                   href="mailto:rodomir-agro.com" class="dealers-link">rodomir-agro.com</a></div>
             </div>
           </div>
-<!---->
+          <!---->
           <div class="dealers-item green">
             <div class="dealers-item__row bright">
               <div class="dealers-item__col first">
@@ -2462,3 +2463,6 @@
 </body>
 
 </html>
+
+
+

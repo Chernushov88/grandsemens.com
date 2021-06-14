@@ -1,5 +1,5 @@
 <?php
-$recepient = "zavada.dmitry@gmail.com, GrandSemensSA@gmail.com";
+$recepient = "grand.semens.ua@gmail.com";
 $sitename = "Grand Semens";
 
 $phone = trim($_POST["phone"]);
@@ -57,12 +57,12 @@ function reduceMessage($arr, $prefix)
             $message .= $obj['message'] . $obj['field'] . $prefix;
         }
     }
-    return $message;
+    return $message; 
 }
 
 $pagetitle = "Заявка на grandsemens.com ";
 $messageTB = "‼ $pagetitle ‼\n" . reduceMessage($arrayMessage, "\n");
-
+ 
 $messageEmail = reduceMessage($arrayMessage, "<br>");
 
 //SEND MESSAGE TO TELEGRAM
@@ -78,8 +78,8 @@ function sendMessage($chatID, $message, $token)
     curl_close($ch);
 }
 
-$token = "bot1043929893:AAE9RHl19_2LGNu1vpHWxlSauqKasktajno";
-$chatID = "-1001455387227";
+$token = "bot1609948069:AAEbC0Bgh7DJbk99L1cpeLHnFXHMXjffJcU";
+$chatID = "-581099123";
 sendMessage($chatID, $messageTB, $token);
 
 // Для отправки HTML-письма должен быть установлен заголовок Content-type
